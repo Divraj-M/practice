@@ -1,0 +1,19 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "playwright E2E",
+  "keywords": [
+    "playwright",
+    "MCP",
+    "playwright"
+  ],
+  "license": "ISC",
+  "author": "Divraj",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6"
+  }
+}
