@@ -1,3 +1,4 @@
+
 {
   "name": "practice",
   "version": "1.0.0",
@@ -11,9 +12,17 @@
   "author": "Divraj",
   "type": "commonjs",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "clean:allure": "rimraf allure-results allure-report",
+    "omayo": "npx playwright test tests/omayo.spec.ts",
+    "orange":"npx playwright test tests/orange.spec.ts",
+    "test:allure": "npm run clean:allure && npx playwright test",
+    "report:allure": "allure generate allure-results --clean && allure open allure-report"
+  },
   "devDependencies": {
     "@playwright/test": "^1.65.1",
-    "@types/node": "^26.6.6"
+    "@types/node": "^26.6.6",
+    "allure-playwright": "^3.15.0",
+    "rimraf": "^6.1.4"
   }
 }
