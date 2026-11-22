@@ -15,7 +15,7 @@
   "scripts": {
     "clean:allure": "rimraf allure-results allure-report",
     "omayo": "npx playwright test tests/omayo.spec.ts",
-    "orange":"npx playwright test tests/orange.spec.ts",
+    "orange":"npx playwright test tests/orange.spec.ts --headed",
     "test:allure": "npm run clean:allure && npx playwright test",
     "report:allure": "allure generate allure-results --clean && allure open allure-report"
   },
